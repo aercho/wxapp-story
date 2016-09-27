@@ -1,0 +1,34 @@
+/**picselect.wxss**/
+.section{
+  margin: 50rpx;
+}
+.hidden{
+  display: none;
+}
+.section input{
+  background-color: #fff;
+}
+.pic-container {
+  padding: 50rpx 0;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+.story{
+  height:150rpx;
+}
+.btn{
+    display: block;
+    flex-direction: column;
+    width: 228rpx;
+}
+.picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#picture-item {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 10rpx;
+}
+

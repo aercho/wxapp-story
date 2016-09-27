@@ -1,0 +1,11 @@
+<!--picselect.wxml-->
+<view class="pic-container">
+  <view class="picture">
+    <image class="picture-item" src="{{selectUrl[0]}}" background-size="cover"></image>
+      <button type="default" size="default"  bindtap="chooseImage" class="btn"> 选择 </button>
+  </view>
+  <view class="btn-container">
+    
+      <button type="primary" size="default"  bindtap="chooseImage" class="btn"> 保存 </button>
+  </view>
+</view>

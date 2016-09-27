@@ -1,0 +1,36 @@
+<!--picselect.wxml-->
+<view class="pic-container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+   <view class="section">
+    <view class="section__title">描述</view>
+    <input name="title" placeholder="输入标题" maxlength="60"  class="wxinput"  value="{{title}}"/>
+  </view>
+   <view  class="section section_gap">
+      <view class="section_gap">照片</view>
+      <view class="picture">
+           <input name="image" class="hidden" value="{{images[0]}}"/>
+        <image  id="picture-item" src="{{images[0]}}" background-size="cover"  class="wxinput"></image>
+        <button type="default" size="mini"  bindtap="chooseImage"  class="btn"> 选择 </button>
+      </view>
+  </view>
+  <view class="section section_gap">
+    <view class="section_gap">日期</view>
+    <input name="date" type="date" value="{{date}}"/>
+  </view>
+  <view class="section">
+    <view class="section__title">描述</view>
+    <input name="story" placeholder="输入文字" maxlength="200" class="story"  value="{{story}}"/>
+  </view>
+  <view class="btn-area">
+    <button formType="submit"  type="primary" size="default">保存</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="clearStorage"  type="warn" size="default">clearStorage</button>
+  </view>
+</form>
+<view class="body-view">
+  <toast hidden="{{toastHidden}}" duration="1500" bindchange="toastChange">
+    保存成功
+  </toast>
+</view>
+</view>
