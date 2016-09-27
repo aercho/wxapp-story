@@ -1,0 +1,9 @@
+<!--setting.wxml-->
+  <view class="container">
+     <view class="btn-area">
+        <button bindtap="clearStorage"  type="warn" size="default">clearStorage</button>
+    </view>
+    <modal title="警告"confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+        数据删除后将无法恢复，是否确定清除缓存？
+    </modal>
+  </view>

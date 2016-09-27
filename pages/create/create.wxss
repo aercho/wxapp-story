@@ -1,0 +1,29 @@
+/**picselect.wxss**/
+.pic-container {
+  align-items: center;
+}
+.btn-container{
+  margin-left:20%
+}
+.btn{
+    display: block;
+    flex-direction: column;
+    float: left;
+    margin: 10rpx;
+    width: 228rpx;
+}
+.picture {
+  display: block;
+  flex-direction: column;
+  align-items: left;
+}
+
+.picture-item {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 10rpx;
+}
+
+.picture-title {
+  color: #aaa;
+}

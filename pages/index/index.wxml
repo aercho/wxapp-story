@@ -24,9 +24,7 @@
   <view class="btn-area">
     <button formType="submit"  type="primary" size="default">保存</button>
   </view>
-  <view class="btn-area">
-    <button bindtap="clearStorage"  type="warn" size="default">clearStorage</button>
-  </view>
+ 
 </form>
 <view class="body-view">
   <toast hidden="{{toastHidden}}" duration="1500" bindchange="toastChange">
